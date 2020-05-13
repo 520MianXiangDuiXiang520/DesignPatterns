@@ -1,13 +1,13 @@
 package pers.junebao.simple_factory.phone;
 
-import pers.junebao.simple_factory.fitting.cpu.CPU;
-import pers.junebao.simple_factory.fitting.camera.Camera;
+import pers.junebao.simple_factory.fitting.cpu.BashCPU;
+import pers.junebao.simple_factory.fitting.camera.BashCamera;
 
-public abstract class Phone {
-    CPU cpu;
-    Camera camera;
+public abstract class BashPhone {
+    BashCPU cpu;
+    BashCamera camera;
 
-    Phone(CPU cpu, Camera camera) {
+    BashPhone(BashCPU cpu, BashCamera camera) {
         this.cpu =  cpu;
         this.camera = camera;
     }

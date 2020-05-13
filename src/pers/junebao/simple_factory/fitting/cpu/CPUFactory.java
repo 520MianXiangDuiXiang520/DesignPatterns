@@ -1,7 +1,7 @@
 package pers.junebao.simple_factory.fitting.cpu;
 
 public class CPUFactory {
-    public static CPU getCPU(String name) {
+    public static BashCPU getCPU(String name) {
         if(name.toLowerCase().equals("qualcomm")) {
             return new Qualcomm();
         } else if (name.toLowerCase().equals("kirin")) {

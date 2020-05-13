@@ -1,10 +1,10 @@
 package pers.junebao.simple_factory.phone;
 
-import pers.junebao.simple_factory.fitting.cpu.CPU;
-import pers.junebao.simple_factory.fitting.camera.Camera;
+import pers.junebao.simple_factory.fitting.cpu.BashCPU;
+import pers.junebao.simple_factory.fitting.camera.BashCamera;
 
-public class Honor extends Phone {
-    public Honor(CPU cpu, Camera camera) {
+public class Honor extends BashPhone {
+    public Honor(BashCPU cpu, BashCamera camera) {
         super(cpu, camera);
     }
 }

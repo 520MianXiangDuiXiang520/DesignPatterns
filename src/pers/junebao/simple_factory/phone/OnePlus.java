@@ -1,11 +1,11 @@
 package pers.junebao.simple_factory.phone;
 
-import pers.junebao.simple_factory.fitting.cpu.CPU;
-import pers.junebao.simple_factory.fitting.camera.Camera;
+import pers.junebao.simple_factory.fitting.cpu.BashCPU;
+import pers.junebao.simple_factory.fitting.camera.BashCamera;
 
-public class OnePlus extends Phone {
+public class OnePlus extends BashPhone {
 
-    public OnePlus(CPU cpu, Camera camera) {
+    public OnePlus(BashCPU cpu, BashCamera camera) {
         super(cpu, camera);
     }
 }
