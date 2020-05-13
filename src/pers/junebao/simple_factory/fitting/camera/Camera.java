@@ -1,4 +1,4 @@
-package pers.junebao.simple_factory.fitting;
+package pers.junebao.simple_factory.fitting.camera;
 
 public abstract class Camera {
     public String pixel;

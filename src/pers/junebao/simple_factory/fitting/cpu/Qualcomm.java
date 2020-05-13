@@ -1,8 +1,8 @@
-package pers.junebao.simple_factory.fitting;
+package pers.junebao.simple_factory.fitting.cpu;
 
 public class Qualcomm extends CPU {
 
-    public Qualcomm() {
+    Qualcomm() {
         super("高通865");
     }
 }

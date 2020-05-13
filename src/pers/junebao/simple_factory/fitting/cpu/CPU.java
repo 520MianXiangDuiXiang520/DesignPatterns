@@ -1,4 +1,4 @@
-package pers.junebao.simple_factory.fitting;
+package pers.junebao.simple_factory.fitting.cpu;
 
 public abstract class CPU {
     public String name;

@@ -1,6 +1,9 @@
 package pers.junebao.simple_factory;
 
-import pers.junebao.simple_factory.fitting.*;
+import pers.junebao.simple_factory.fitting.camera.Camera;
+import pers.junebao.simple_factory.fitting.camera.CameraFactory;
+import pers.junebao.simple_factory.fitting.cpu.CPU;
+import pers.junebao.simple_factory.fitting.cpu.CPUFactory;
 import pers.junebao.simple_factory.phone.Honor;
 import pers.junebao.simple_factory.phone.OnePlus;
 import pers.junebao.simple_factory.phone.Phone;
@@ -13,12 +16,12 @@ public class PhoneFactory {
      */
     public static Phone getPhone(String name) {
         if(name.toLowerCase().equals("oneplus")){
-            CPU cpu = new Qualcomm();
-            Camera camera = new Sony();
+            CPU cpu = CPUFactory.getCPU("Qualcomm");
+            Camera camera = CameraFactory.getCamera("Sony");
             return new OnePlus(cpu, camera);
         } else if (name.toLowerCase().equals("honor")) {
-            CPU cpu = new Kirin();
-            Camera camera = new Leica();
+            CPU cpu = CPUFactory.getCPU("Kirin");
+            Camera camera = CameraFactory.getCamera("Leica");
             return new Honor(cpu, camera);
         } else {
             return null;

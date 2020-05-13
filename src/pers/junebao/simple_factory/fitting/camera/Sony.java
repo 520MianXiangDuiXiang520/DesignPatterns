@@ -1,7 +1,7 @@
-package pers.junebao.simple_factory.fitting;
+package pers.junebao.simple_factory.fitting.camera;
 
 public class Sony extends Camera {
-    public Sony() {
+    Sony() {
         super("索尼", "4800万");
     }
 }

@@ -1,7 +1,7 @@
-package pers.junebao.simple_factory.fitting;
+package pers.junebao.simple_factory.fitting.cpu;
 
 public class Kirin extends CPU {
-    public Kirin() {
+    Kirin() {
         super("麒麟990");
     }
 }
