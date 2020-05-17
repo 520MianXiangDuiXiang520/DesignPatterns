@@ -1,9 +1,9 @@
 package pers.junebao.simple_factory.fitting.cpu;
 
-public abstract class BashCPU {
+public abstract class BaseCPU {
     public String name;
 
-    BashCPU(String name) {
+    BaseCPU(String name) {
         this.name = name;
     }
 

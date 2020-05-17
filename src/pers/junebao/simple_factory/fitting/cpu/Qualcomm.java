@@ -1,8 +1,8 @@
 package pers.junebao.simple_factory.fitting.cpu;
 
-public class Qualcomm extends BashCPU {
+public class Qualcomm extends BaseCPU {
 
-    Qualcomm() {
+    public Qualcomm() {
         super("高通865");
     }
 }
