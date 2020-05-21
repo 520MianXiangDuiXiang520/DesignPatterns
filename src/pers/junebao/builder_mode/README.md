@@ -1,6 +1,10 @@
 ## 建造者模式（生成器模式）
 
 > 建造者模式（Builder）将一个复杂对象的构建和表示分离，使同样的构建过程可以创建不同的表示。
+> 
+> 参考：
+> 1. [geeksforgeeks |builder-design-pattern/](https://www.geeksforgeeks.org/builder-design-pattern/)
+> 2. [CSDN | 设计模式（三）建造者模式Builder（创建型）](https://blog.csdn.net/hguisu/article/details/7518060)
 
 建造者模式被用来一步一步的构造一些复杂对象，这些对象被构建的步骤（过程）都一样，所以可以把**对象的构建过程**抽离出去作为一个接口或抽象类（Builder），然后具体的建造者（ConcreteBuilder）实现Builder，提供每一步具体做的事。用户需要某个产品时，调用指导者（Director），Director会控Builder按步骤生产具体产品，并返回给用户。
 
