@@ -1,13 +1,30 @@
 package pers.junebao.abstract_factory.db;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
 public class DaoFactory {
-    private static String db = "MySQL";
-//    private static String db = "SQLServer";
+
+    private static final Properties properties = new Properties();
+    private static String pack;
+    private static String db;
+    private static final String filePath = "./src/pers/junebao/abstract_factory/db/setting.properties";
 
     public static IUserDao getUserDao(){
+
+        try {
+            properties.load(new FileReader(filePath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        pack = properties.getProperty("package");
+        db = properties.getProperty("db");
+        String userDaoName = properties.getProperty("userDaoClassName");
+        System.out.println(pack + db + userDaoName);
         try {
             try {
-                return (IUserDao) Class.forName("pers.junebao.abstract_factory.db." + db + "UserDao").newInstance();
+                return (IUserDao) Class.forName(pack + db + userDaoName).newInstance();
             } catch (InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
                 return null;
@@ -29,8 +46,16 @@ public class DaoFactory {
 
     public static IDepartDao getDepartDao(){
         try {
+            properties.load(new FileReader(filePath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        pack = properties.getProperty("package");
+        db = properties.getProperty("db");
+        String departDaoName = properties.getProperty("departDaoClassName");
+        try {
             try {
-                return (IDepartDao) Class.forName("pers.junebao.abstract_factory.db." + db + "DepartDao").newInstance();
+                return (IDepartDao) Class.forName(pack + db + departDaoName).newInstance();
             } catch (InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
                 return null;

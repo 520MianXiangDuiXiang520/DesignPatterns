@@ -1,6 +1,11 @@
 ## 抽象工厂模式
 
 > 抽象工厂模式( Abstract Factory),提供一个创建一系列相关或相互依赖对象的接口,而无需指定它们具体的类。
+>
+> 参考:
+>
+> * [refactoringguru | abstract-factory](https://refactoringguru.cn/design-patterns/abstract-factory)
+> * [readthedocs | 抽象工厂模式(Abstract Factory)](https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/abstract_factory.html)
 
 工厂方法中每一个工厂只提供一种产品，为此，抽象工厂将工厂方法中的所用工厂向上抽象出一个**抽象工厂**，将所有产品向上抽象出**抽象产品**，这样抽象工厂模式中的角色就包括：
 
