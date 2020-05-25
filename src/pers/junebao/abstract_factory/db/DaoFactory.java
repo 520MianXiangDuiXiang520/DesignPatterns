@@ -4,9 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- * @author lenovo
- */
+
 public class DaoFactory {
 
     private static final Properties properties = new Properties();
