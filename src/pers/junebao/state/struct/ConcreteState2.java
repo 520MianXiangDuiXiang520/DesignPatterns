@@ -3,7 +3,6 @@ package pers.junebao.state.struct;
 /**
  * @author JuneBao
  * @date 2020/5/25 21:21
- * @deprecated
  */
 public class ConcreteState2 extends BaseState {
     @Override

@@ -3,7 +3,6 @@ package pers.junebao.state.struct;
 /**
  * @author JuneBao
  * @date 2020/5/25 21:13
- * @deprecated
  */
 public class Context {
     private BaseState state;
